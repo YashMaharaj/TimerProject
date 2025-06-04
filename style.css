@@ -1,10 +1,37 @@
+/*==================== Body ===============*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
-  font-family: "Lato", sans-serif;
-  background-image: url(images/bgimage.jpeg);
+  font-family:'Montserrat', 'sans-serif';
+  background-image: url(images/wallpaperUpdated.jpg);
   background-repeat: repeat;
   background-size: cover;
 }
 
+
+
+
+#HomePage-Text{
+  font-family: 'Montserrat', 'sans-serif';
+  color: #f1f1f1;
+  margin: 0 auto;
+  padding: 4px;
+  border-radius: 4;
+  margin-top: 200px;
+  margin-left: 500px;
+  width: 50%;
+  
+
+}
+
+#body-paragraph{
+  text-align: center;
+}
+
+
+
+/*==================== MENU ===============*/
 .nav-head, .closebtn {
     display: inline;
     color: white;
@@ -18,11 +45,11 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #11111160;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
-  color: white;
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -52,6 +79,8 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+
+/*=============== NAVIGATION ================*/
 nav {
     display: inline;
     background-color: black;
@@ -79,7 +108,7 @@ nav ul {
 li a{
     text-decoration: none;
     display: inline;
-    color: white;
+    color: rgb(238, 231, 231);
     font-weight: bold;
 }
 
@@ -87,6 +116,14 @@ ul {
     display: inline;
 }
 
-#partition {
-    
+/*===============Footer==============*/
+.footer{
+  color: #fdf1f1;
+  position:absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  z-index: 500;
+  font-size: larger;
+
 }
