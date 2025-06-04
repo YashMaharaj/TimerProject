@@ -38,6 +38,7 @@ body {
   transform: translateY(30px);
   animation: riseUp 1s ease-out forwards;
   text-align: center;
+  font-size: x-large;
 }
 
 @keyframes riseUp {
@@ -149,3 +150,9 @@ ul {
   font-size: larger;
 
 }
+
+.footer > a {
+  text-decoration: none;
+  color: #f1f1f1;
+}
+
