@@ -5,19 +5,58 @@
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"> 
 
     <link rel="stylesheet" href="style.css">
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SuperSerious Count Down</title>
+
+    <!-- <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+    
+        .gradient-background {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(to bottom,
+                    #000000 0%,
+                    #000000 24%,
+                    #1a1a1a 30%,
+                    #272740 45%,
+                    #414a5b 55%,
+                    #2563eb 75%,
+                    #1d4ed8 85%,
+                    #1e40af 100%);
+            position: fixed;
+            z-index: -1;
+        }
+    
+        .top-divider {
+            position: relative;
+            z-index: 1001;
+            /* higher than your navbar's z-index */
+        }
+    </style> -->
+
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-black"> 
             <div id="mySidenav" class="sidenav">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">PYTHON</a>
-                <a href="#">AZ 900</a>
-                <a href="#">AZ 204</a>
-                <a href="#">AZ 400</a>
+                <a href="#" id="python">PYTHON</a>
+                <a href="#" id="az900">AZ 900</a>
+                <a href="#" id="az204">AZ 204</a>
+                <a href="#" id="az400">AZ 400</a>
             </div>
 
             <span class="nav-head" onclick="openNav()">&#9776;</span>
@@ -31,12 +70,13 @@
                     document.getElementById("mySidenav").style.width = "0";
                 }
             </script>
-
            
             <div class="container-fluid">
-                
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ABOUT</a>
                         </li>
@@ -45,17 +85,30 @@
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <input class="form-control me-2" type="search" aria-label="Search" />
                         <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
             </div>
-        </nav>
+        </nav>        
+        <hr class="top-divider mt-0 mb-4" style="border-top: 2px solid #ccc;">
+    </header>
 
-        <div id="partition">
-            <h3></h3>
+<div class="gradient-background"></div>
+<div class="partition">
+    <div class="row">
+        <div class="col-6 border-end" style="border-right: 2px solid #ccc;">
+            <div class="effect"></div>
         </div>
 
-    </header>
+
+        <div class="col-6"></div>
+    </div>
+</div>
+
+<footer>
+    <p>Super Serious Developers | Copyright 2025 ©</p>
+</footer>
+<script src="script.js"></script>
 </body>
 </html>

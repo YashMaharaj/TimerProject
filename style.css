@@ -1,8 +1,22 @@
+/*   HTML STYLING   */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Lato", sans-serif;
-  background-image: url(images/bgimage.jpeg);
+  background-image: url(images/bgimagetwo.png);
   background-repeat: repeat;
-  background-size: cover;
+  background-size: cover; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.partition {
+  margin-top: 90px;
 }
 
 .nav-head, .closebtn {
@@ -52,12 +66,24 @@ body {
   .sidenav a {font-size: 18px;}
 }
 
+.navbar {
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    padding-right: 21px;
+}
+
 nav {
     display: inline;
     background-color: black;
     padding-right: 100%;
     padding-top: 20px;
     padding-bottom: 8px;
+}
+
+.nav-link {
+  font-weight: bold;
 }
 
 nav ul li {
@@ -73,20 +99,48 @@ nav ul {
 }
 
 #navbarSupportedContent {
-    margin-left: 920px;
-}
-
-li a{
-    text-decoration: none;
-    display: inline;
-    color: white;
-    font-weight: bold;
+    margin-left: 832px;
 }
 
 ul {
     display: inline;
 }
 
-#partition {
-    
+footer{
+    background-color: #000000d0; 
+    text-align: center; 
+    padding: 20px;
+    font-size: 13px;
+    color: white;
+    margin-top: auto;
+}
+
+
+/*   JS STYLING   */
+.details {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-bottom: 90px;
+}
+
+.eff-head {
+  text-align: center;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-top: 30px;
+  text-decoration: underline;
+}
+
+.eff-para {
+  padding: 5px;
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+}
+
+ol li {
+  color: white;
+  margin-top: 10px;
+  list-style-type: circle;
 }
